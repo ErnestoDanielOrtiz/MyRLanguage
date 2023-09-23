@@ -1,0 +1,13 @@
+main(){
+ 	a = 2;
+ 	b  = 1.2; 
+    pi = 3.14 ;
+    z = 99;
+
+while(z > 0){
+ 	z = sum(z,a);
+}
+for(x = 0; x < 10; x++){
+    print(x);
+}
+}
