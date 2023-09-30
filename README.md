@@ -8,3 +8,5 @@ Aparecen "errores" en lineas "que no existen". 1352, 1203, 1084, 1062.
 
 Avance 2
 Se agregaron las clases Variable y VariableTable, que sirven para meterlas a la tabla de variables, asi como buscar si existen y regresarlas si son llamadas.
+Se creo el cubo semantico
+Falta hacer pruebas, se haran en los siguientes 2 dias.
