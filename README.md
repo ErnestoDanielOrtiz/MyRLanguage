@@ -10,3 +10,10 @@ Avance 2
 Se agregaron las clases Variable y VariableTable, que sirven para meterlas a la tabla de variables, asi como buscar si existen y regresarlas si son llamadas.
 Se creo el cubo semantico
 Falta hacer pruebas, se haran en los siguientes 2 dias.
+
+Avance 3
+No pude avanzar debido a problemas externos.
+
+Avance 4
+Se tienen clases de funcion, directorio de funciones y puntos neuralgicos.
+Se agrego la clase cuadruplos que imprime estos en un archivo de texto.

@@ -1,7 +1,7 @@
 class VariableTable:
 
     #Inicializa la tabla de variables
-    def _init_ (self):
+    def __init__ (self):
         self.variables = {}
 
     #Busca si existe la variable en la tabla
