@@ -1,14 +1,28 @@
 from lark import Visitor
+from VariableTable import VariableTable
+from Variable import Variable
+from Cuadruplos import Cuadruplos
+from SemanticCube import SemanticCube
+
+varTable = VariableTable()
+quads = Cuadruplos()
+semCube = SemanticCube()
+
+pilaSaltos = []
+pilaTipo = []
+pilaOperadores = []
+pilaOperandos = []
+pilaVariables = []
+
+nVarTemp = 0
+
+contadores = []
 
 class NeuralgicPoints(Visitor):
 
-    def program(self, tree):
-        print("program")
-        for child in tree.children:
-            self.visit(child)
+    def start(self, tree):
+        pilaSaltos.append(quads.contador)
+        quads.addCuadruplo("GOTO-MAIN", None, None, "N/A")
 
-    def number(self, tree):
-        print('sum')
-        assert tree.data == "varcte"
-        tree.children[0] += 1
-        print(tree.children[0])
+    def np_main(self, tree):
+        quads.fillCuadruplo(pilaSaltos.pop(), quads.contador)

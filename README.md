@@ -17,3 +17,11 @@ No pude avanzar debido a problemas externos.
 Avance 4
 Se tienen clases de funcion, directorio de funciones y puntos neuralgicos.
 Se agrego la clase cuadruplos que imprime estos en un archivo de texto.
+
+Avance 5
+Se agregaron cuadruplos de condicionales
+
+Avance 6
+Se creo la memoria virtual con las direcciones
+Se crearon puntos neuralgicos
+Se cambio un poco la gramatica

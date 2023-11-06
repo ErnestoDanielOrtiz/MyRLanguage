@@ -55,6 +55,7 @@ NUMBER: INT | FLOAT
 STRING: ESCAPED_STRING
 FLOATT: "float"
 WHITESPACE: (" " | /\t/ )+
+
 %ignore WHITESPACE
 %ignore NEW_LINE
 
