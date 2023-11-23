@@ -1,0 +1,2 @@
+def mean():
+    print ("test")

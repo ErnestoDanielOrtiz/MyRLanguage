@@ -1,6 +1,6 @@
 class SemanticCube:
 
-    def _init_(self):
+    def __init__(self):
         self.semanticCube = {
             '+': {
                 'int': {
@@ -184,7 +184,7 @@ class SemanticCube:
                     'boolean': 'boolean' 
                 }
             },
-            '<='': {
+            '<=': {
                 'int': {
                     'int': 'boolean',
                     'float': 'boolean',
@@ -313,11 +313,40 @@ class SemanticCube:
                     'string': 'error',
                     'boolean': 'boolean' 
                 }
+            },
+            'not': {
+                'int': {
+                    'int': 'error',
+                    'float': 'error',
+                    'string': 'error',
+                    'boolean': 'error' 
+                }, 
+                'float': {
+                    'int': 'error',
+                    'float': 'error',
+                    'string': 'error',
+                    'boolean': 'error' 
+                }, 
+                'string': {
+                    'int': 'error',
+                    'float': 'error',
+                    'string': 'error',
+                    'boolean': 'error' 
+                }, 
+                'boolean': {
+                    'int': 'error',
+                    'float': 'error',
+                    'string': 'error',
+                    'boolean': 'boolean' 
+                }
             }
         }
     
-    def getValue(self, operator, op1, op2):
-        return self.semanticCube[operator][op1][op2]
+    def getValue(self, operation, typeLeft, typeRight):
+        return self.semanticCube[operation][typeLeft][typeRight]
 
     def getCube(self):
         return self
+    
+    def printCube(self):
+        print(self.semanticCube)
