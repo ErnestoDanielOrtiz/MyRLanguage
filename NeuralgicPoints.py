@@ -802,7 +802,7 @@ class NeuralgicPoints(Visitor):
         varID = tree.children[2].value
         exist = varTable.getVariable(varID)
         if exist == None:
-            print("Error: Variable " + varID + " no declarada")
+            print("Error: Variable " + varID + " undefined")
             exit()
         varType = exist.type
         cuadruplos.addCuadruplo("READ", None, None, exist.dirV)
@@ -1215,7 +1215,7 @@ class NeuralgicPoints(Visitor):
             exist = varTable.getVariable(leftDirv)
 
             if exist == None:
-                print("Error: Variable ", leftDirv, " no declarada")
+                print("Error: Variable ", leftDirv, " not defined")
                 exit()
 
             leftDirv = exist.dirV
@@ -1257,7 +1257,7 @@ class NeuralgicPoints(Visitor):
 
         if var != None:
             if var.type != varType:
-                print("Error: Tipos incompatibles")
+                print("Error: Type mismatch")
                 exit()
 
             var.value = varValue

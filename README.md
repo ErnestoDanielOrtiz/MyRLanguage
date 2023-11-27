@@ -2,6 +2,10 @@
 
 Proyecto para la clase Diseño de Compiladores
 
+Manual de usuario
+Para utilizar el lenguaje myR, primero hay que asegurarse de tener installado lark. Esto se hace de la manera siguiente: pip install lark
+Una vez que se tiene lark, se ejecuta el código de main.py. Dentro de este archivo se encuentra el código de cual es el archivo que se quiere compilar, por lo que hay que tener mucho cuidado con las rutas hacia el archivo y los nombres para que este funcione correctamente.
+
 Avance 1
 Se creo el la gramática con sus reglas. Se imprimen las reglas al probar el codigo.
 Aparecen "errores" en lineas "que no existen". 1352, 1203, 1084, 1062.
